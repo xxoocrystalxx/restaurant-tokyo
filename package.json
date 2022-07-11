@@ -8,7 +8,7 @@
     "dev": "NODE_ENV=development nodemon index.js",
     "lint": "eslint .",
     "build:ui": "rm -rf build && cd ../frotend/ && ng build --prod && cp -r dist/frotend ../backend",
-    "deploy": "git push heroku main",
+    "deploy": "git push heroku HEAD:master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy"
   },
   "author": "feifei",
