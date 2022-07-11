@@ -1,7 +1,7 @@
 {
-  "name": "bloglist",
+  "name": "tokyo",
   "version": "1.0.0",
-  "description": "a blog list application, that allows users to save information about interesting blogs they have stumbled across on the internet.",
+  "description": "a restaurant site",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
