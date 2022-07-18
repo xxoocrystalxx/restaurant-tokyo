@@ -1,12 +1,11 @@
 # Restaurant Tokyo
 
-A simple site of a Restaurant located on Aversa.
+A site of a Restaurant located on Aversa: as client you can book a reservation,
+as admin you can add new dish, delete old dish, watch the list of reservations.
 
 Frotend: Angular, Angular Material
 
 Backend: express, node.js, mongoDB
-
-Status: working in progress
 
 [LIVE DEMO](https://blooming-castle-73555.herokuapp.com/)
 
