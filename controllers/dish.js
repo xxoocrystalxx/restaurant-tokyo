@@ -2,6 +2,11 @@ const dishRouter = require('express').Router()
 const Dish = require('../models/dish')
 const Allergen = require('../models/allergen')
 
+dishRouter.get('/featured', async (request, response) => {
+  const dish = await Dish.find({ feature: true })
+  response.json(dish)
+})
+
 dishRouter.get('/', async (request, response) => {
   const dish = await Dish.find({}).populate('allergens')
   response.json(dish)

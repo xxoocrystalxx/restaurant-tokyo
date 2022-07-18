@@ -10,6 +10,7 @@ const usersRouter = require('./controllers/users')
 const loginRouter = require('./controllers/login')
 const dishRouter = require('./controllers/dish')
 const allergenRouter = require('./controllers/allergens')
+const reservationRouter = require('./controllers/reservations')
 
 mongoose
   .connect(process.env.MONGODB_URI)
@@ -31,6 +32,7 @@ app.use('/api/dishes', middleware.userExtractor, dishRouter)
 app.use('/api/register', usersRouter)
 app.use('/admin', loginRouter)
 app.use('/api/allergens', allergenRouter)
+app.use('/api/reservations', middleware.userExtractor, reservationRouter)
 
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
