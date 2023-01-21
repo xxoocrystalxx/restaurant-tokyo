@@ -7,11 +7,11 @@ Frotend: Angular, Angular Material
 
 Backend: express, node.js, mongoDB
 
-[LIVE DEMO](https://blooming-castle-73555.herokuapp.com/)
+[LIVE DEMO](https://restaurant-tokyo.onrender.com/)
 
 ## admin panel
 
-[admin login](https://blooming-castle-73555.herokuapp.com/#/admin)
+[admin login](https://restaurant-tokyo.onrender.com/#/admin)
 
 username:feifei
 

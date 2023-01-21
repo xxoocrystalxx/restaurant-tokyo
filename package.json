@@ -8,9 +8,8 @@
     "dev": "NODE_ENV=development nodemon index.js",
     "lint": "eslint .",
     "build:ui": "rm -rf build && cd ../frotend/ && ng build --prod && cp -r dist/build ../backend",
-    "deploy:gh": "git push origin master",
-    "deploy:hk": "git push heroku HEAD:master",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy:hk && npm run deploy:gh"
+    "deploy:gh": "git add . && git commit -m uibuild && git push origin master",
+    "deploy:full": "npm run build:ui && npm run deploy:gh"
   },
   "author": "feifei",
   "license": "ISC",
